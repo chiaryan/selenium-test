@@ -2,12 +2,10 @@ const { Builder, By, Key, until } = require('selenium-webdriver');
 const Chrome = require("selenium-webdriver/chrome");
 
 (async function test() {
-    const options = new Chrome.Options().addArguments("--headless");
+    const options = new Chrome.Options().addArguments("--headless=new");
     const builder = new Builder().forBrowser('chrome').setChromeOptions(options);
-
-    console.log(builder.getChromeOptions());
     
-    let driver = await builder.build();
+    const driver = await builder.build();
     
     try {
         await driver.get('http://www.google.com');

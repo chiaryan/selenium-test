@@ -36,12 +36,10 @@ jobs:
           npm i
       
       - uses: nanasess/setup-chromedriver@v2
-
-      - name: asd
-        run: |
-          /usr/local/bin/chromedriver --version
+        with:
+          chromedriver-version: '130.0.6723.116'
 
       # Runs a set of commands using the runners shell
-      - name: Start webdriver
+      - name: Start test
         run: |
           node works.js
