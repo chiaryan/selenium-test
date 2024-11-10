@@ -34,6 +34,8 @@ jobs:
       - name: npm i
         run: |
           npm i
+      
+      - uses: nanasess/setup-chromedriver@v2
 
       - name: asd
         run: |
