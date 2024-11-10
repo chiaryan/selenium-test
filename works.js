@@ -2,7 +2,7 @@ const { Builder, By, Key, until } = require('selenium-webdriver');
 const Chrome = require("selenium-webdriver/chrome");
 
 (async function test() {
-    const options = new Chrome.Options().headless();
+    const options = new Chrome.Options().addArguments("--headless");
     const builder = new Builder().forBrowser('chrome').setChromeOptions(options);
 
     console.log(builder.getChromeOptions());
