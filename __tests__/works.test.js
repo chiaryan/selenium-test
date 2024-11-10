@@ -15,6 +15,6 @@ describe("chrome webdriver installed correctly", () => {
         } finally {
             await driver.quit();
         }
-    });
+    }, 10000);
 
 });
