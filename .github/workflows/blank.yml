@@ -39,7 +39,7 @@ jobs:
 
       - name: asd
         run: |
-          ls /usr/bin/google-chrome
+          /usr/local/bin/chromedriver --version
 
       # Runs a set of commands using the runners shell
       - name: Start webdriver
