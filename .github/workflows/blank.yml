@@ -32,7 +32,6 @@ jobs:
           node-version: '22'
 
       - name: npm i
-        uses: actions/setup-node@v2
         run: |
           npm i
 
